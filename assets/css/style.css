@@ -1,0 +1,270 @@
+* {
+  font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+  box-sizing: border-box;
+}
+
+
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  color: rgb(94, 59, 13);
+  text-shadow: solid black;
+}
+
+section {
+  height: 100vh;
+}
+
+.entete__nav {
+  top: 5px;
+  right: 50px;
+  width: 400px;
+  /* 2rem = 2*14px  */
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.entete__nav a:hover {
+  background-color: rgb(92, 92, 78);
+  color: rgb(211, 110, 28);
+}
+
+/*-------------------------------------MENU BURGER----------------------------------*/
+.navigation,
+#chk-burger {
+  display: none;
+  position: fixed;
+  top: 40px;
+  right: 10px;
+  background-color: rgba(19, 44, 19, 0.126);
+  padding: 20px;
+}
+
+#chk-burger:checked ~ .navigation {
+  display: block;
+  transform: translateX(0)
+}
+
+#chk-burger{
+  display: none;
+}
+
+.navigation{
+  position: fixed;
+  transform: translateX(1000%);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navigation a { 
+  border-radius: 10%;
+  display: block;
+  color: rgb(61, 38, 7);
+  background-color: rgba(135, 94, 68, 0.758);
+  text-shadow: 1px 1px 5px rgba(144, 127, 100, 0.623);
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 3px;
+  margin: 5px;
+}
+
+.navigation__bouton {
+    max-width: 500px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  transform: scale(1);
+ 
+}
+
+.navigation__bouton:hover{
+    transition: transform 0.5s;
+    transform: scale(1.12);
+}
+
+/*------------------------------------HTML----------------------------------------*/ 
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+
+body {
+  border: 8px double rgb(144, 112, 69);
+  border-radius: 0.2%;
+  margin: 0;
+  padding: 0;
+
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  text-shadow: 1px 1px 5px rgb(144, 127, 100);
+  transform: scale(1);
+  transition: transform 0.5s;
+  width: 40%;
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+p {
+  text-shadow: 1px 1px 5px rgb(144, 127, 100);
+}
+
+section {
+  min-height: 100vh;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+figure > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.centre {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #ffffff34;
+}
+
+/*--------------------------------SECTIONS-------------------------------------*/
+
+body > div:nth-of-type(1) {
+  background-image: url("../images/john.jpg");
+}
+body > div:nth-of-type(2) {
+  background-color: rgb(154, 102, 69);
+  background-image: url(../images/johnarthur.jpg);
+}
+body > div:nth-of-type(3) {
+  background-color: rgb(198, 182, 154);
+  background-image: url("../images/john_marsden.avif");
+}
+body > div:nth-of-type(4) {
+  background-color: rgb(93, 56, 35);
+  background-image: url(../images/john2.webp);
+}
+body > div:nth-of-type(5) {
+  background-color: rgb(245, 184, 0);
+  background-image: url(../images/john6.avif);
+  
+}
+body > div:nth-of-type(6) {
+  background-color: rgb(243, 234, 207);
+  background-image: url(../images/john3.jpg);
+}
+body > div:nth-of-type(7) {
+  background-color: rgb(243, 234, 207);
+  background-image: url(../images/John-Marston.jpg);
+}
+body > div:nth-of-type(8) {
+  background-color: rgb(243, 234, 207);
+  background-image: url(../images/john5.png);
+}
+
+/* -------------------------------SECTION ARTICLES--------------------------------------*/
+.principal__article {
+  flex: 1 0 340px;
+   margin-top: 0;
+  gap: 10px;
+  padding-top: 0px;
+  padding-left: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: rgba(129, 66, 10, 0.414);
+  border-radius: 8px;
+}
+.principal__section {
+  margin-top: 0;
+  gap: 10px;
+  padding-top: 0px;
+  padding-left: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+}
+
+/* ------------------------------SECTION PIED DE PAGE-------------------------------*/ 
+.pied__section{
+ flex-grow: 1;
+ flex-shrink: 0;
+ flex-basis: 250px;
+line-height: 0.9;
+}
+
+.pied{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.centre__pied{
+display: inline-flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+
+/*-------------------------------SECTION FORMULAIRE-------------------------------*/
+
+.formulaire {
+  padding: 0;
+}
+
+.formulaire__div {
+  margin: 20px 0;
+}
+
+.formulaire__input {
+  background-color: rgba(144, 127, 100, 0.437);
+  border: 4px dashed rgb(147, 98, 67);
+  border-radius: 15%;
+}
+
+.inscription {
+  transform: scale(1);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px rgb(104, 60, 6);
+  align-items: center;
+  font-size: 18px;
+  max-width: 95px;
+  background-color: rgba(135, 94, 68, 0.758);
+  border-radius: 10%;
+  border: 2px solid rgb(64, 42, 0);
+}
+
+.inscription:hover {
+  transform: scale(1.1);
+}
+
+
+.submit {
+  border-radius: 30%;
+}
+
+header {
+  min-height: 100vh;
+  padding-left: 20px;
+}
+
+p {
+  max-width: 500px;
+  font-size: 18px;
+  color: rgb(94, 59, 13);
+}

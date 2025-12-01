@@ -1,0 +1,32 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: wheat;
+     
+}
+
+.formulaire{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    border: 10px dotted rgb(255, 153, 204);
+}
+
+.formulaire__div{
+    margin: 20px 0;
+}
+
+.formulaire__label{
+
+}
+
+.formulaire__input{
+    background-color: rgb(255, 213, 134);
+     border: 4px dashed rgb(255, 153, 204);
+     border-radius: 15%;
+}
+
+.submit{
+    border-radius: 30%;
+}
