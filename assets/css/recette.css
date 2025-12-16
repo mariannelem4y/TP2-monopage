@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+.recette > h1,
+h2,
+h3 {
+  font-family: "DynaPuff";
+}
+.recettes__indiennes {
+  font-family: "DynaPuff";
+  max-width: 300px;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 40px;
+}
+
+.recette__div {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 1;
+  max-width: 300px;
+}
+
+.Recette__centre {
+  background-color: rgb(197, 197, 69);
+}
+
+.global {
+  background-color: rgb(241, 241, 76);
+}
+
+.recette {
+  margin: 0;
+  padding: 20px;
+  background-color: wheat;
+  font-size: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recette__img {
+  position: relative;
+  padding: 10px;
+  order: -1;
+  transform: rotate(-5deg);
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.recette__img:hover {
+  transform: rotate(0deg);
+  transition: transform 1s, filter 2s;
+}
+
+.recette__figcaption {
+  font-size: 20px;
+  background-color: rgba(250, 235, 215, 0.488);
+  text-align: center;
+  transform: rotate(-5deg);
+  display: flex;
+  height: 25px;
+  width: 300px;
+}
+
+.recette__figcaption:hover {
+  transform: rotate(0deg);
+  transition: transform 1s, filter 2s;
+}
+
+.ol {
+  order: 2;
+}
+
+.recettes__indiennes {
+  text-align: left;
+  font-family: "DynaPuff";
+  max-width: 300px;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 40px;
+  order: 1;
+}
+
+.recette__figure {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  order: 2;
+}
+
+.recette__div__preparation {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 1;
+  max-width: 300px;
+  order: 4;
+}
+
+.recette__div__ingredients {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 1;
+  max-width: 300px;
+  order: 3;
+}
+
+.svgicon{
+    display: flex; 
+}
+
